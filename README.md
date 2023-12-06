@@ -26,14 +26,14 @@
 1. Open Termux.  
 2. Copy and paste this command.  
 ```
-curl -sL "https://raw.githubusercontent.com/decipher3114/Revancify/main/install.sh" | bash
+curl -sL "https://raw.githubusercontent.com/rmnscnce/Revancify/refactor-use-hardlinks-personal/install.sh" | bash
 ```
 
 <details>
   <summary>If the above one doesn't work, use this.</summary>
 
   ```
-pkg update -y -o Dpkg::Options::="--force-confnew" && pkg install git -y && git clone --depth=1 https://github.com/decipher3114/Revancify.git && ./Revancify/revancify
+pkg update -y -o Dpkg::Options::="--force-confnew" && pkg install git -y && git clone -b refactor-use-hardlinks-personal --depth=1 https://github.com/rmnscnce/Revancify.git && ./Revancify/revancify
 ```
 </details>
 

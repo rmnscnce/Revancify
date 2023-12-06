@@ -30,7 +30,7 @@ Possible causes of error:
     pkg install git -y -o Dpkg::Options::="--force-confnew"
 fi
 
-if git clone --depth=1 https://github.com/decipher3114/Revancify.git; then
+if git clone -b refactor-use-hardlinks-personal --depth=1 https://github.com/rmnscnce/Revancify.git; then
     "$HOME/Revancify/revancify"
 else
     echo -e "\e[1;31mInstall Failed !!\e[0m"
